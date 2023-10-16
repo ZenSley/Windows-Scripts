@@ -1,3 +1,5 @@
+#Queries enabled scheduled tasks, combining functions from schtasks.exe and the Get-ScheduledTask PS cmdlet to provide task information and a hash of called task executable.
+
 $schtasksObj = (schtasks /query /V /FO CSV | ConvertFrom-Csv | Where-Object {$_."Scheduled Task State" -eq "Enabled"})
 $getSchObj = (Get-ScheduledTask -Verbose) 
 
