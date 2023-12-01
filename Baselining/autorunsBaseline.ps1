@@ -1,5 +1,4 @@
-$targets = Import-Csv ..\AllHosts.csv |
-  Where-Object {$_.os -eq "Win10"} |
-    Select-Object -ExpandProperty ip
+$Creds = Get-Credentials
+$Targets = # import target list with target hostnames or IP 
 
-ICM -CN $targets -CR $creds -FilePath ..\01_Reference_Scripts\autoruns.ps1 -ArgumentList (,(Get-Content .\Autoruns.txt)) | Export-Csv .\Win10AutoRunsBaseline.csv
+Invoke-Command -CN $targets -CR $Creds -FilePath ..\Data_Gather\autoruns.ps1 -ArgumentList (,(Get-Content ..\Data_Gather\Autoruns.txt)) | Export-Csv .\AutoRunsBaseline.csv
