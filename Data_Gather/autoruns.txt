@@ -1,0 +1,20 @@
+Registry::HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+Registry::HKCU\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Run
+Registry::HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows\Run
+Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce
+Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnceEx
+Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\RunServices
+Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce
+Registry::HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+Registry::HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Run
+Registry::HKLM\Software\Microsoft\Windows\CurrentVersion\RunOnce
+Registry::HKLM\Software\Microsoft\Windows\CurrentVersion\RunOnceEx
+Registry::HKLM\System\CurrentControlSet\Services
+Registry::HKLM\Software\Microsoft\Windows\CurrentVersion\RunServices
+Registry::HKLM\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce
+Registry::HKLM\SOFTWARE\Microsoft\Active Setup\Installed Components
+Registry::HKLM\SOFTWARE\Wow6432Node\Microsoft\Active Setup\Installed Components
+Registry::HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\SharedTaskScheduler
+Registry::HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\SharedTaskScheduler
+Registry::HKU\*\Software\Microsoft\Windows\CurrentVersion\Run
+Registry::HKU\*\Software\Microsoft\Windows\CurrentVersion\RunOnce
