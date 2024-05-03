@@ -6,4 +6,5 @@ $procs = Get-CimInstance -ClassName Win32_Process   |
                             Path,
                             CommandLine,
                             ParentProcessID,
+                            CreationDate,
                             @{n="Hash"; e={(Get-FileHash -Path $_.path).hash}}
