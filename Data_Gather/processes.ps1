@@ -2,9 +2,13 @@
 
 $procs = Get-CimInstance -ClassName Win32_Process   |
     Select-Object -Property ProcessName,
-                            ProcessID,
-                            Path,
-                            CommandLine,
-                            ParentProcessID,
+                            Handle,
+                            Handles,
                             CreationDate,
-                            @{n="Hash"; e={(Get-FileHash -Path $_.path).hash}}
+                            ExecutablePath,
+                            CommandLine, 
+                            ProcessID,
+                            ParentProcessID,
+                            @{n="ExeHash"; e={(Get-FileHash -Path $_.Executablepath).hash}}
+                            
+$procs 
